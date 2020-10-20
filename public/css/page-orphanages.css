@@ -28,3 +28,27 @@ aside p {
 aside footer p {
     margin-top: 0.8rem;
 }
+
+#mapid {
+    width: 50%;
+}
+
+/* button */
+a.create-orphanage {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #15c3d6;
+    border: 0;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 200ms;
+}
+
+a.create-orphanage:hover {
+    background: #17d6eb;
+}
