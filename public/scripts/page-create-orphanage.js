@@ -55,3 +55,22 @@ function deleteField(event) {
 
     span.parentNode.remove()
 }
+
+function toggleSelect(event) {
+    // remove the .active class (from the buttons)
+    document.querySelectorAll('.button-select button')
+    .forEach((button) => button.classList.remove('active'))
+    /*
+    .forEach(function(button) {
+        button.classList.remove('active')
+    })
+    */
+
+    // puts class .active on the clicked button
+    const button = event.currentTarget
+    button.classList.add('active')
+
+    // checks button clicked yes or no
+    const input = document.querySelector('[name="open_on_weekends"]')
+    input.value = button.dataset.value
+}
